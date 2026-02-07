@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parfait Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🍨 Parfait Maker</h1>
+
+  <div id="container">
+    <div id="parfait-area">
+      <img src="parfait.png" id="parfait-base"  />
+    </div>
+
+    <div id="toppings">
+        <div class="border_toppings">
+         <img src="strawberry.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+         <img src="banana.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+          <img src="blueberry.png" class="topping" />
+        </div>
+      
+    </div>
+     <div id="toppings">
+        <div class="border_toppings">
+         <img src="cherry.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+         <img src="pineapple.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+          <img src="kiwi.png" class="topping" />
+        </div>
+      
+    </div>
+     <div id="toppings">
+        <div class="border_toppings">
+         <img src="vanilla_ice_cream.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+         <img src="chocolate_ice_cream.png" class="topping" />
+        </div>
+        <div class="border_toppings">
+          <img src="strawberry_ice_cream.png" class="topping" />
+        </div>
+      
+    </div>
+  </div>
+<div style="display: flex; align-items: center; justify-content: center; ">
+<button id="undoBtn">↩️ Undo</button>
+<button id="resetBtn">🗑️ Reset Parfait</button>
+<div style="margin-top: 15px;">
+  🍥 Rotate:
+  <input
+    type="range"
+    id="rotateSlider"
+    min="0"
+    max="360"
+    value="0"
+  />
+</div>
+<div style="margin-top: 10px;">
+  📏 Size:
+  <input
+    type="range"
+    id="sizeSlider"
+    min="0.5"
+    max="2"
+    step="0.05"
+    value="1"
+  />
+</div>
+
+</div>
+
+
+
+  <script src="renderer.js"></script>
+</body>
+</html>
